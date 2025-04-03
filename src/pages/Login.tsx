@@ -66,8 +66,8 @@ const Login = () => {
         <div className="container-custom max-w-md mx-auto">
           <div className="bg-white shadow-md rounded-xl p-8">
             <div className="text-center mb-6">
-              <div className="inline-flex items-center justify-center bg-teal-100 w-12 h-12 rounded-full mb-4">
-                <LockIcon className="h-6 w-6 text-teal-600" />
+              <div className="inline-flex items-center justify-center bg-indigo-100 w-12 h-12 rounded-full mb-4">
+                <LockIcon className="h-6 w-6 text-indigo-600" />
               </div>
               <h1 className="text-2xl font-bold">Log in to your account</h1>
             </div>
@@ -103,12 +103,12 @@ const Login = () => {
                 />
 
                 <div className="text-right">
-                  <a href="#" className="text-sm text-teal-600 hover:underline">
+                  <a href="#" className="text-sm text-indigo-600 hover:underline">
                     Forgot password?
                   </a>
                 </div>
 
-                <Button type="submit" className="w-full bg-teal-600 hover:bg-teal-700">
+                <Button type="submit" className="w-full bg-indigo-600 hover:bg-indigo-700">
                   Log in
                 </Button>
               </form>
@@ -117,7 +117,7 @@ const Login = () => {
             <div className="mt-6 text-center">
               <p className="text-sm text-gray-600">
                 Don't have an account?{" "}
-                <Link to="/signup" className="text-teal-600 hover:underline">
+                <Link to="/signup" className="text-indigo-600 hover:underline">
                   Sign up
                 </Link>
               </p>

@@ -1,8 +1,6 @@
-
 import React from "react";
 import { LockIcon } from "lucide-react";
 import { Link } from "react-router-dom";
-
 
 const HeroSection = () => {
   return (
@@ -25,7 +23,7 @@ const HeroSection = () => {
             </p>
             <Link
               to="/check-rate"
-              className="inline-block bg-teal-600 hover:bg-teal-700 text-white font-semibold py-3 px-8 rounded transition-colors w-full md:w-auto text-center"
+              className="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded transition-colors w-full md:w-auto text-center"
             >
               Check your rate
             </Link>
@@ -37,14 +35,14 @@ const HeroSection = () => {
             <div className="mt-6">
               <a
                 href="#trustpilot"
-                className="font-semibold text-gray-800 hover:text-teal-600 transition-colors underline"
+                className="font-semibold text-gray-800 hover:text-indigo-600 transition-colors underline"
               >
                 Trustpilot rating.
               </a>
             </div>
           </div>
           <div className="md:w-1/2 relative">
-            <div className="bg-teal-light rounded-xl p-4 relative">
+            <div className="bg-indigo-100 rounded-xl p-4 relative">
               <img
                 src="/lovable-uploads/loan2.jpg"
                 alt="Person using phone for loans"
@@ -53,10 +51,10 @@ const HeroSection = () => {
               <div className="absolute top-8 right-12">
                 <div className="bg-white rounded-lg p-2 shadow-md border border-gray-100">
                   <div className="flex items-center">
-                    <div className="bg-teal-600 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center mr-1">
+                    <div className="bg-indigo-600 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center mr-1">
                       1
                     </div>
-                    <div className="text-xs font-semibold text-teal-600">
+                    <div className="text-xs font-semibold text-indigo-600">
                       PERSONAL
                       <br />
                       LOAN

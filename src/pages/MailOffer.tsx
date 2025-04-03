@@ -105,7 +105,7 @@ const CheckRate = () => {
                     )}
                   />
                 ))}
-                <Button type="submit" disabled={loading} className="bg-green-500 text-white w-full">
+                <Button type="submit" disabled={loading} className="bg-indigo-500 text-white w-full">
                   {loading ? "Processing..." : "Check Your Rate"}
                 </Button>
               </form>

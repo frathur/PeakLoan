@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { ChevronRight, User, Car, Clock, Home } from "lucide-react";
@@ -13,12 +12,12 @@ interface LoanCardProps {
 const LoanCard = ({ title, description, icon, link }: LoanCardProps) => {
   return (
     <div className="loan-card">
-      <div className="text-teal-600 mb-3">{icon}</div>
+      <div className="text-indigo-600 mb-3">{icon}</div>
       <h3 className="text-lg font-semibold mb-2">{title}</h3>
       <p className="text-gray-600 text-sm mb-4 flex-grow">{description}</p>
       <Link
         to={link}
-        className="flex items-center text-teal-600 font-medium mt-2 text-sm"
+        className="flex items-center text-indigo-600 font-medium mt-2 text-sm"
       >
         Learn more <ChevronRight className="ml-1 h-4 w-4" />
       </Link>
@@ -28,7 +27,7 @@ const LoanCard = ({ title, description, icon, link }: LoanCardProps) => {
 
 const LoanTypes = () => {
   return (
-    <div className="bg-teal-600 py-12">
+    <div className="bg-indigo-600 py-12">
       <div className="container-custom">
         <div className="flex flex-col md:flex-row justify-between items-center mb-10">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-4 md:mb-0">

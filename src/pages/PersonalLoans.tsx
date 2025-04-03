@@ -26,7 +26,7 @@ const PersonalLoans = () => {
               </p>
               <Link
                 to="/check-rate"
-                className="inline-block bg-teal-600 hover:bg-teal-700 text-white font-semibold py-3 px-8 rounded transition-colors w-full md:w-auto text-center"
+                className="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded transition-colors w-full md:w-auto text-center"
               >
                 Check your rate
               </Link>
@@ -37,11 +37,11 @@ const PersonalLoans = () => {
               </p>
             </div>
             <div className="md:w-1/2 relative">
-              <div className="bg-teal-50 rounded-xl p-6">
+              <div className="bg-indigo-50 rounded-xl p-6">
                 <h3 className="text-xl font-semibold mb-4">Why choose PeakLoan for a personal loan?</h3>
                 <ul className="space-y-3">
                   <li className="flex items-start">
-                    <div className="text-teal-600 mr-3 mt-1">
+                    <div className="text-indigo-600 mr-3 mt-1">
                       <User className="h-5 w-5" />
                     </div>
                     <div>
@@ -52,7 +52,7 @@ const PersonalLoans = () => {
                     </div>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-teal-600 mr-3 mt-1">
+                    <div className="text-indigo-600 mr-3 mt-1">
                       <User className="h-5 w-5" />
                     </div>
                     <div>
@@ -63,7 +63,7 @@ const PersonalLoans = () => {
                     </div>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-teal-600 mr-3 mt-1">
+                    <div className="text-indigo-600 mr-3 mt-1">
                       <User className="h-5 w-5" />
                     </div>
                     <div>

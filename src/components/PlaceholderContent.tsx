@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -22,7 +21,7 @@ const PlaceholderContent = ({
         <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">{description}</p>
         <Link
           to={linkTo}
-          className="inline-block bg-teal-600 hover:bg-teal-700 text-white font-semibold py-3 px-8 rounded transition-colors"
+          className="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded transition-colors"
         >
           {linkText}
         </Link>

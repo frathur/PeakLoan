@@ -7,16 +7,18 @@ const LoanStatusCard = ({ status, onClose }) => {
   const isApproved = status === "Approved";
   
   return (
-    <Card className="w-full max-w-md mx-auto shadow-lg border-t-4 overflow-hidden transition-all duration-300 transform hover:scale-105"
-      style={{ borderTopColor: isApproved ? '#10b981' : '#ef4444' }}>
-      <CardHeader className={`text-center ${isApproved ? 'bg-green-50' : 'bg-red-50'}`}>
+    <Card 
+      className="w-full max-w-md mx-auto shadow-lg border-t-4 overflow-hidden transition-all duration-300 transform hover:scale-105"
+      style={{ borderTopColor: isApproved ? '#4f46e5' : '#ef4444' }} // Approved: indigo-600, Rejected: red
+    >
+      <CardHeader className={`text-center ${isApproved ? 'bg-indigo-50' : 'bg-red-50'}`}>
         <CardTitle className="flex flex-col items-center justify-center space-y-2">
           {isApproved ? (
-            <CheckCircle size={64} className="text-green-500" />
+            <CheckCircle size={64} className="text-indigo-500" />
           ) : (
             <AlertCircle size={64} className="text-red-500" />
           )}
-          <span className={`text-2xl font-bold ${isApproved ? 'text-green-700' : 'text-red-700'}`}>
+          <span className={`text-2xl font-bold ${isApproved ? 'text-indigo-700' : 'text-red-700'}`}>
             Loan {status}
           </span>
         </CardTitle>
@@ -37,14 +39,15 @@ const LoanStatusCard = ({ status, onClose }) => {
         </div>
         <div className="flex justify-center space-x-3">
           {isApproved && (
-            <Button className="bg-green-600 hover:bg-green-700">
+            <Button className="bg-indigo-600 hover:bg-indigo-700">
               Continue Application
             </Button>
           )}
           <Button 
             variant="outline" 
             onClick={onClose}
-            className={`border ${isApproved ? 'border-green-200 text-green-700' : 'border-red-200 text-red-700'}`}>
+            className={`border ${isApproved ? 'border-indigo-200 text-indigo-700' : 'border-red-200 text-red-700'}`}
+          >
             {isApproved ? "View Details" : "Try Again"}
           </Button>
         </div>

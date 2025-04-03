@@ -1,4 +1,3 @@
-
 import React from "react";
 import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
@@ -12,7 +11,7 @@ const Layout = ({ children }: LayoutProps) => {
     <div className="min-h-screen flex flex-col">
       <Navbar />
       <main className="flex-grow">{children}</main>
-      <footer className="bg-gray-100 py-6 text-center text-sm text-gray-600">
+      <footer className="bg-indigo-50 py-6 text-center text-sm text-indigo-600">
         <div className="container-custom">
           <p>
             * Rates and terms depend on credit score and other factors.

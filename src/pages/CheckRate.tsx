@@ -105,16 +105,16 @@ const LoanStatusCard = ({ status, onClose }) => {
       {/* Card content */}
       <Card 
         className={`w-full max-w-md mx-auto shadow-xl border-t-4 overflow-hidden transition-all duration-300 transform ${isVisible ? 'scale-100' : 'scale-90'} relative z-10`}
-        style={{ borderTopColor: isApproved ? '#10b981' : '#ef4444' }}
+        style={{ borderTopColor: isApproved ? '#4f46e5' : '#ef4444' }}
       >
-        <CardHeader className={`text-center ${isApproved ? 'bg-green-50' : 'bg-red-50'}`}>
+        <CardHeader className={`text-center ${isApproved ? 'bg-indigo-50' : 'bg-red-50'}`}>
           <CardTitle className="flex flex-col items-center justify-center space-y-2">
             {isApproved ? (
-              <CheckCircle size={64} className="text-green-500" />
+              <CheckCircle size={64} className="text-indigo-500" />
             ) : (
               <AlertCircle size={64} className="text-red-500" />
             )}
-            <span className={`text-2xl font-bold ${isApproved ? 'text-green-700' : 'text-red-700'}`}>
+            <span className={`text-2xl font-bold ${isApproved ? 'text-indigo-700' : 'text-red-700'}`}>
               Loan {status}
             </span>
           </CardTitle>
@@ -135,14 +135,15 @@ const LoanStatusCard = ({ status, onClose }) => {
           </div>
           <div className="flex justify-center space-x-3">
             {isApproved && (
-              <Button className="bg-green-600 hover:bg-green-700">
+              <Button className="bg-indigo-600 hover:bg-indigo-700">
                 Continue Application
               </Button>
             )}
             <Button 
               variant="outline" 
               onClick={handleClose}
-              className={`border ${isApproved ? 'border-green-200 text-green-700' : 'border-red-200 text-red-700'}`}>
+              className={`border ${isApproved ? 'border-indigo-200 text-indigo-700' : 'border-red-200 text-red-700'}`}
+            >
               {isApproved ? "View Details" : "Try Again"}
             </Button>
           </div>
@@ -172,7 +173,7 @@ const CheckRate = () => {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      no_of_dependents: 0,  // Fixed the typo here from a0 to 0
+      no_of_dependents: 0,
       education: 0,
       self_employed: 0,
       income_annum: 0,
@@ -431,9 +432,13 @@ const CheckRate = () => {
                 <div className="flex justify-between">
                   {step > 0 && <Button type="button" onClick={() => setStep(step - 1)}>Previous</Button>}
                   {step < steps.length - 1 ? (
-                    <Button type="button" onClick={() => setStep(Math.min(step + 1, steps.length - 1))} className="bg-teal-500">Next</Button>
+                    <Button type="button" onClick={() => setStep(Math.min(step + 1, steps.length - 1))} className="bg-indigo-600 hover:bg-indigo-700">
+                      Next
+                    </Button>
                   ) : (
-                    <Button type="submit" disabled={loading} className="bg-teal-500">{loading ? "Loading..." : "Check Rate"}</Button>
+                    <Button type="submit" disabled={loading} className="bg-indigo-600 hover:bg-indigo-700">
+                      {loading ? "Loading..." : "Check Rate"}
+                    </Button>
                   )}
                 </div>
               </form>

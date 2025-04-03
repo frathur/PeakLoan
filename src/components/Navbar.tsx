@@ -23,33 +23,33 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="border-b border-gray-200 py-4">
+    <nav className="border-b border-indigo-200 py-4 shadow-sm">
       <div className="container-custom flex justify-between items-center">
         <div className="flex items-center">
           <Link to="/" className="mr-8">
             <div className="flex items-center">
-             <span className="text-teal-500 text-2xl font-bold">PeakLoan</span>
+              <span className="text-indigo-500 text-2xl font-bold">PeakLoan</span>
             </div>
           </Link>
           <div className="hidden md:flex space-x-6">
             <div className="relative group">
-              <button className="nav-link flex items-center">
+              <button className="nav-link flex items-center text-gray-700 hover:text-indigo-600">
                 BORROW <ChevronDown className="ml-1 h-4 w-4" />
               </button>
             </div>
-            <Link to="/for-lenders" className="nav-link">
+            <Link to="/for-lenders" className="nav-link text-gray-700 hover:text-indigo-600">
               FOR LENDERS
             </Link>
-            <Link to="/for-dealers" className="nav-link">
+            <Link to="/for-dealers" className="nav-link text-gray-700 hover:text-indigo-600">
               FOR DEALERS
             </Link>
             <div className="relative group">
-              <button className="nav-link flex items-center">
+              <button className="nav-link flex items-center text-gray-700 hover:text-indigo-600">
                 ABOUT <ChevronDown className="ml-1 h-4 w-4" />
               </button>
             </div>
             <div className="relative group">
-              <button className="nav-link flex items-center">
+              <button className="nav-link flex items-center text-gray-700 hover:text-indigo-600">
                 RESOURCES <ChevronDown className="ml-1 h-4 w-4" />
               </button>
             </div>
@@ -65,7 +65,7 @@ const Navbar = () => {
                 <div className="w-8 h-8 rounded-full bg-gray-300 flex items-center justify-center text-sm font-medium text-gray-700">
                   {user.email ? user.email.charAt(0).toUpperCase() : "U"}
                 </div>
-                <ChevronDown className="ml-1 h-4 w-4" />
+                <ChevronDown className="ml-1 h-4 w-4 text-gray-700" />
               </button>
               {showDropdown && (
                 <div className="absolute right-0 mt-2 w-40 bg-white shadow-lg rounded-md z-10">
@@ -79,7 +79,7 @@ const Navbar = () => {
               )}
             </div>
           ) : (
-            <Link to="/login" className="text-teal-600 font-semibold hover:text-teal-700">
+            <Link to="/login" className="text-indigo-600 font-semibold hover:text-indigo-700">
               LOG IN
             </Link>
           )}
